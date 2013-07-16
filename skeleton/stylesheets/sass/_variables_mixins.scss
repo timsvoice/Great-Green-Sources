@@ -3,7 +3,7 @@
 $primary_color:rgba(0,102,51, 1);
 $secondary_color:rgba(186,208,134, 1);
 $tertiary_color:rgba(89,47,32, 1);
-$body_pattern:none;
+$body_pattern:url('../../images/background.png') repeat;
 $body_color:green;
 $container_pattern:rgba(255,255,255, 1);
 $padding:20px;
@@ -16,9 +16,10 @@ $icon_color:white;
 @mixin branding ($branding_width, $branding_height) {
   background:url('../../images/branding.png') repeat;
   background-size:cover;
-  width:$branding_width*0.5; 
-  height:$branding_height*0.5;
-  display:inline-block;
+  width:$branding_width; 
+  height:$branding_height;
+  display:block;
+  margin:40px 0px;
 }
 
 //Elements//

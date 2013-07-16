@@ -84,16 +84,13 @@ table {
 * Branding
 *
 */
-#branding {
+img#branding {
   background: url("../../images/branding.png") repeat;
   background-size: cover;
-  width: 141px;
-  height: 152px;
-  display: inline-block; }
-
-header h1 {
-  display: inline-block;
-  float: left; }
+  width: 592px;
+  height: 60px;
+  display: block;
+  margin: 40px 0px; }
 
 /*
 *
@@ -112,10 +109,10 @@ a {
 *
 */
 /* Choose $body_pattern or $body_color*/
-html {
-  background: none; }
+body {
+  background: url("../../images/background.png") repeat; }
 
-body .container {
+body.container {
   overflow: hidden;
   background-color: white;
   margin: 50px auto;
@@ -379,9 +376,6 @@ h3 {
  */
 article {
   margin-top: 50px; }
-
-header {
-  text-align: center; }
 
 /*
 *
