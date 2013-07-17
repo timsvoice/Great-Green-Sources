@@ -11,6 +11,8 @@ $icon_color:white;
 
 //Typography//
 
+$link_color:red;
+
 //Branding//
 
 @mixin branding ($branding_width, $branding_height) {
@@ -65,6 +67,11 @@ $aspect_ratio:0.8;
   
 //Images//
 
-$mood_image1:url('../../images/mood_image1.jpg');
+@mixin large_format_image ($large_format_image_width, $large_format_image_height) {
+  width:$large_format_image_width;
+  height:$large_format_image_height;
+}
+
+
 $mood_image2:url('../../images/mood_image2.jpg');
 $mood_image3:url('../../images/mood_image3.jpg');

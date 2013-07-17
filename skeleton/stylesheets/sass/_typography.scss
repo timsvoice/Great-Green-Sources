@@ -4,14 +4,79 @@
 *
 */
 
+@import "_ggs_baseline";
+
+@font-face {  
+  font-family: "Executive";  
+  src: url(./fontsExecutive/executive_regular.eot); /* IE */  
+  src: url("Executive"), url(./fontsExecutive/executive_regular.ttf) format("truetype"); /* non-IE */ 
+}
 
 
+* {
+  font-family: 'Executive', sans-serif;
+}
+
+h1#branding {
+  @include massive;
+  font-family: 'Executive', sans-serif;
+  font-weight:800;
+  text-transform:uppercase;
+}
+
+span#h1_research {
+   font-weight:200;
+}
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Executive', sans-serif;
+  font-weight:400;
 }
 
 a {
     text-decoration:none;
+    color:$link_color;
 }
 
+.light {
+  font-weight:200;
+}
+
+.regular {
+  font-weight:400;
+}
+
+.bold {
+  font-weight:800;
+  font-style:bold;
+}
+
+.italic {
+  font-weight:400;
+  font-style:italic;
+}
+
+.small {
+  @include small;
+}
+
+#meta_data {
+  overflow:auto;
+  margin:10px 0px 0px 0px;
+}
+
+blockquote {
+  font-family: 'Ariel', serif;
+  position:relative;
+  font-weight:thin;
+  font-style:italic;
+  text-align:center;
+  border-top:2px solid gray;
+  border-bottom:2px solid gray;
+  margin:30px auto;
+  clear:both;
+}
+
+#large_format_image_dimentions {
+  display:inline-block;
+}

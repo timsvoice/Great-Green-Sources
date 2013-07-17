@@ -53,8 +53,9 @@ textarea {
   @include textarea (white,$primary_color,2px);
 }
 
-#mood_image1 {
-   @include mood_image ($mood_image1);
+#large_format_img {
+
+   
 }
 
 #mood_image2 {
