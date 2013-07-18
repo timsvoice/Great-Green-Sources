@@ -21,6 +21,30 @@ header {
 
 }
 
+section {
+  border-top:1px solid black;
+  margin:25px 0px 0px 0px;
+}
+
+#colors {
+  float:left;
+  display:inline-block;
+}
+
+#font_weights_styles {
+  float:left;
+  display:inline-block;
+}
+
+#headers {
+  display:inline-block;
+}
+
+#body {
+  clear:both;
+}
+
+
 /*
 *
 *  Simple fluid media
@@ -47,4 +71,8 @@ img {
  * 
  */
 
+#colors {
+  float:left;
+  display:inline-block;
+}
 

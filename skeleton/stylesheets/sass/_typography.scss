@@ -17,11 +17,19 @@
   font-family: 'Executive', sans-serif;
 }
 
+h1, h2 {
+  text-transform: capitalize;
+}
+
 h1#branding {
   @include massive;
   font-family: 'Executive', sans-serif;
   font-weight:800;
   text-transform:uppercase;
+}
+
+h1#project_name {
+  margin-bottom:0px;
 }
 
 span#h1_research {
@@ -62,21 +70,38 @@ a {
 
 #meta_data {
   overflow:auto;
-  margin:10px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
 }
 
-blockquote {
+#content_block {
+  float:right;
+}
+
+#content_block h2 {
+  margin:0px 0px;
+}
+
+#content_block h1 {
+  margin-bottom:0px;
+}
+
+#content_block p:first-child {
+  margin-top:50px;
+}
+
+.pullquote h3{
+  @include italic;
+  @include large;
   font-family: 'Ariel', serif;
-  position:relative;
-  font-weight:thin;
-  font-style:italic;
-  text-align:center;
-  border-top:2px solid gray;
-  border-bottom:2px solid gray;
-  margin:30px auto;
-  clear:both;
+  color: $colorC;
+  margin: 10px;
+  margin-left: 0px;
+  float: left;
+  display: block;
+  width: 40%;
+  max-width: 400px;
+  border-right: 2px solid rgb(204, 204, 204);
+  padding-right: 10px;
 }
 
-#large_format_image_dimentions {
-  display:inline-block;
-}
+
