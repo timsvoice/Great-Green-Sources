@@ -83,6 +83,77 @@ $aspect_ratio:0.8;
   cursor:pointer;
 }
 
+//Layouts//
+
+@mixin headblock_three {
+  #headblock_three_container {
+    float:right;
+    #headblock_three {
+      float:right;
+      padding-bottom:10px;
+        img#headblock_three_a {
+          float:left;
+          display:inline-block;
+        }
+        img#headblock_three_b {
+          float:right;
+          display:inline-block;
+        }
+        img#headblock_three_c {
+          float:right;
+          display:inline-block;
+          padding:10px 0px 0px 0px;
+        }  
+    }
+  }  
+}
+
+@mixin headblock_two {
+  #headblock_two_container {
+    float:right;
+    #headblock_two {
+      float:right;
+      padding-bottom:10px;
+        img#headblock_two_a {
+          float:left;
+          display:inline-block;
+        }
+        img#headblock_two_b {
+          float:right;
+          display:inline-block;
+        } 
+    }
+  }  
+}
+
+@mixin headblock_one {
+  #headblock_one_container {
+    float:right;
+    #headblock_one {
+      float:right;
+        img#headblock_one_a {
+        }  
+    }
+  }  
+}  
+
+@mixin bodyblock_two {
+  #bodyblock_two_container {
+    float:right;
+    #bodyblock_two {
+      float:right;
+      padding-bottom:10px;    
+        img#bodyblock_two_a {
+          float:left;
+        }
+        img#bodyblock_two_b {
+          float:left;
+          clear:left;
+          padding:10px 0px 0px 0px;
+        }  
+    }
+  }  
+}  
   
 //Images//
 

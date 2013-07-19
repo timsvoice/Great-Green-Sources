@@ -76,3 +76,12 @@ img {
   display:inline-block;
 }
 
+/*
+ * Layout
+ * 
+ */
+
+@include headblock_three;
+@include headblock_two;
+@include headblock_one;
+@include bodyblock_two;

@@ -85,9 +85,11 @@ a {
   margin-bottom:0px;
 }
 
-#content_block p:first-child {
+#content_block p:first-child, .img {
   margin-top:50px;
 }
+
+
 
 .pullquote h3{
   @include italic;
@@ -104,4 +106,13 @@ a {
   padding-right: 10px;
 }
 
-
+#layout .img_block_caption {
+  @include italic;
+  color: $colorB;
+  float:left;
+  clear:left;
+  padding-top:10px;
+    p {
+      border-right: 2px solid rgb(204, 204, 204);
+    }
+}
