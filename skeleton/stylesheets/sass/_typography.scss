@@ -8,8 +8,8 @@
 
 @font-face {  
   font-family: "Executive";  
-  src: url(./fontsExecutive/executive_regular.eot); /* IE */  
-  src: url("Executive"), url(./fontsExecutive/executive_regular.ttf) format("truetype"); /* non-IE */ 
+  src: url(../fonts/Executive/executive_regular.eot); /* IE */  
+  src: url("Executive"), url(../fonts/Executive/executive_regular.ttf) format("truetype"); /* non-IE */ 
 }
 
 
@@ -19,10 +19,11 @@
 
 h1, h2 {
   text-transform: capitalize;
+  font-weight:400;
 }
 
 h1#branding {
-  @include massive;
+  @include huge;
   font-family: 'Executive', sans-serif;
   font-weight:800;
   text-transform:uppercase;
@@ -36,8 +37,7 @@ span#h1_research {
    font-weight:200;
 }
 
-body {
-  font-family: 'Executive', sans-serif;
+body p{
   font-weight:400;
 }
 
@@ -95,7 +95,7 @@ a {
   @include italic;
   @include large;
   font-family: 'Ariel', serif;
-  color: $colorC;
+  color: $colorD;
   margin: 10px;
   margin-left: 0px;
   float: left;
@@ -106,12 +106,18 @@ a {
   padding-right: 10px;
 }
 
-#layout .img_block_caption {
-  @include italic;
-  color: $colorB;
-  float:left;
+blockquote {
+    font-size:0.813em;
+    font-weight:200;
+}
+
+#layout .img_block_caption{
+
+  color: $colorA;
   clear:left;
-  padding-top:10px;
+  padding:0px 10px 0px 0px;
+  margin:10px 10px 10px 0px;
+  border-right: 2px solid rgb(204, 204, 204);
     p {
       border-right: 2px solid rgb(204, 204, 204);
     }

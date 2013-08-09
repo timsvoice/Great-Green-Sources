@@ -1,7 +1,7 @@
 //Color//
 
 $colorA:rgba(0,0,0, 1);
-$colorB:rgba(160,164,163, 1);
+$colorB:rgba(188,188,188, 1);
 $colorC:rgba(0,0,20, 1);
 $colorD:rgba(196,44,37, 1);
 $body_pattern:url('../../images/background.png') repeat;
@@ -93,15 +93,15 @@ $aspect_ratio:0.8;
       padding-bottom:10px;
         img#headblock_three_a {
           float:left;
-          display:inline-block;
+          
         }
         img#headblock_three_b {
           float:right;
-          display:inline-block;
+          
         }
         img#headblock_three_c {
           float:right;
-          display:inline-block;
+          
           padding:10px 0px 0px 0px;
         }  
     }
@@ -116,11 +116,11 @@ $aspect_ratio:0.8;
       padding-bottom:10px;
         img#headblock_two_a {
           float:left;
-          display:inline-block;
+          
         }
         img#headblock_two_b {
           float:right;
-          display:inline-block;
+          
         } 
     }
   }  
@@ -130,6 +130,7 @@ $aspect_ratio:0.8;
   #headblock_one_container {
     float:right;
     #headblock_one {
+      padding-bottom:10px;
       float:right;
         img#headblock_one_a {
         }  
@@ -140,16 +141,18 @@ $aspect_ratio:0.8;
 @mixin bodyblock_two {
   #bodyblock_two_container {
     float:right;
+    margin:10px 0px;
     #bodyblock_two {
       float:right;
       padding-bottom:10px;    
         img#bodyblock_two_a {
           float:left;
+          padding:20px 10px 0px 0px;
         }
         img#bodyblock_two_b {
           float:left;
           clear:left;
-          padding:10px 0px 0px 0px;
+          padding:10px 10px 10px 0px;
         }  
     }
   }  
