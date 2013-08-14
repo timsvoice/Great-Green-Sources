@@ -7,11 +7,22 @@
 @import "_ggs_baseline";
 
 @font-face {  
-  font-family: "Executive";  
+  font-family: "Executive_Regular";  
   src: url(../fonts/Executive/executive_regular.eot); /* IE */  
   src: url("Executive"), url(../fonts/Executive/executive_regular.ttf) format("truetype"); /* non-IE */ 
 }
 
+@font-face {  
+  font-family: "Executive_Bold";  
+  src: url(../fonts/Executive/executive_bold.eot); /* IE */  
+  src: url("Executive"), url(../fonts/Executive/executive_bold.ttf) format("truetype"); /* non-IE */ 
+}
+
+@font-face {  
+  font-family: "Executive_Thin";  
+  src: url(../fonts/Executive/executive_thin.eot); /* IE */  
+  src: url("Executive"), url(../fonts/Executive/executive_thin.ttf) format("truetype"); /* non-IE */ 
+}
 
 * {
   font-family: 'Executive', sans-serif;
@@ -23,27 +34,50 @@ h1, h2 {
 }
 
 h1#branding {
-  @include huge;
+  @include massive;
   font-family: 'Executive', sans-serif;
   font-weight:800;
   text-transform:uppercase;
+  border-bottom:1px solid $colorA;
+  margin-bottom:10px;
 }
 
 h1#project_name {
   margin-bottom:0px;
 }
 
+h1#login_welcome {
+  text-transform:uppercase;
+  border-bottom:1px solid $colorA;
+  margin-bottom:25px;
+}
+
 span#h1_research {
+   @include light;
    font-weight:200;
 }
 
 body p{
-  font-weight:400;
+  font-weight:200;
 }
 
 a {
-    text-decoration:none;
-    color:$link_color;
+  text-decoration:none;
+  color:$link_color;
+}
+
+ul#menu {
+  display:inline-block;
+}
+
+li {
+  list-style:none;
+  display:inline-block;
+  margin:0px 20px 10px 0px;
+}
+
+p#login_intro {
+  margin:50px 0px 0px 0px;
 }
 
 .light {
@@ -89,13 +123,15 @@ a {
   margin-top:50px;
 }
 
-
+button {
+  text-transform:uppercase;
+}
 
 .pullquote h3{
   @include italic;
   @include large;
-  font-family: 'Ariel', serif;
-  color: $colorD;
+
+  color: $colorC;
   margin: 10px;
   margin-left: 0px;
   float: left;

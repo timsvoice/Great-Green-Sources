@@ -85,7 +85,7 @@ table {
 *
 */
 hr {
-  border: 1px solid #bcbcbc; }
+  border: 1px solid #c8c8c8; }
 
 img#branding {
   background: url("../../images/branding.png") repeat;
@@ -260,10 +260,24 @@ h3 {
     font-size: 1.125em;
     max-width: 160 em; } }
 @font-face {
-  font-family: "Executive";
+  font-family: "Executive_Regular";
   src: url(../fonts/Executive/executive_regular.eot);
   /* IE */
   src: url("Executive"), url(../fonts/Executive/executive_regular.ttf) format("truetype");
+  /* non-IE */ }
+
+@font-face {
+  font-family: "Executive_Bold";
+  src: url(../fonts/Executive/executive_bold.eot);
+  /* IE */
+  src: url("Executive"), url(../fonts/Executive/executive_bold.ttf) format("truetype");
+  /* non-IE */ }
+
+@font-face {
+  font-family: "Executive_Thin";
+  src: url(../fonts/Executive/executive_thin.eot);
+  /* IE */
+  src: url("Executive"), url(../fonts/Executive/executive_thin.ttf) format("truetype");
   /* non-IE */ }
 
 * {
@@ -274,25 +288,44 @@ h1, h2 {
   font-weight: 400; }
 
 h1#branding {
-  /* 42px / 48px */
-  font-size: 2.625em;
-  line-height: 1.14286em;
+  /* 73px */
+  font-size: 4.5625em;
+  line-height: 0.9863em;
   font-family: 'Executive', sans-serif;
   font-weight: 800;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px; }
 
 h1#project_name {
   margin-bottom: 0px; }
 
+h1#login_welcome {
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  margin-bottom: 25px; }
+
 span#h1_research {
+  font-weight: 200;
   font-weight: 200; }
 
 body p {
-  font-weight: 400; }
+  font-weight: 200; }
 
 a {
   text-decoration: none;
   color: #c42c25; }
+
+ul#menu {
+  display: inline-block; }
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 20px 10px 0px; }
+
+p#login_intro {
+  margin: 50px 0px 0px 0px; }
 
 .light {
   font-weight: 200; }
@@ -329,14 +362,16 @@ a {
 #content_block p:first-child, .img {
   margin-top: 50px; }
 
+button {
+  text-transform: uppercase; }
+
 .pullquote h3 {
   font-weight: 400;
   font-style: italic;
   /* 26 / 36px */
   font-size: 1.625em;
   line-height: 1.38462em;
-  font-family: 'Ariel', serif;
-  color: #c42c25;
+  color: #000046;
   margin: 10px;
   margin-left: 0px;
   float: left;
@@ -365,7 +400,7 @@ blockquote {
 *
 */
 hr {
-  border: 1px solid #bcbcbc; }
+  border: 1px solid #c8c8c8; }
 
 /* Choose $body_pattern or $body_color*/
 body {
@@ -388,13 +423,13 @@ body.container {
     background-color: black; }
   #color_block #colorB {
     height: 284px;
-    background-color: #bcbcbc; }
+    background-color: #c8c8c8; }
   #color_block #colorCD {
     height: 284px; }
   #color_block #colorC {
     height: 176px;
     width: 176px;
-    background-color: #000014; }
+    background-color: #000046; }
   #color_block #colorD {
     height: 108px;
     width: 176px;
@@ -406,7 +441,7 @@ body.container {
 *
 */
 hr {
-  border: 1px solid #bcbcbc; }
+  border: 1px solid #c8c8c8; }
 
 #elements {
   display: inline-block;
@@ -420,14 +455,26 @@ hr {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?") format("eot"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"); }
 
+#nav_container {
+  border-bottom: 2px solid black; }
+
+#search_input {
+  float: right;
+  display: inline-block; }
+
 [data-icon]:before {
-  /* 26 / 36px */
-  font-size: 1.625em;
-  line-height: 1.38462em;
   font-family: icomoon;
   content: attr(data-icon);
   speak: none;
   color: black;
+  vertical-align: middle; }
+
+.search_icon[data-icon]:before {
+  font-family: icomoon;
+  font-size: 8px;
+  content: attr(data-icon);
+  speak: none;
+  color: white;
   vertical-align: middle; }
 
 form [data-icon]:before {
@@ -437,8 +484,8 @@ button {
   display: block;
   float: left;
   padding: 0 7px;
-  background-color: #bcbcbc;
-  border: 0px solid black;
+  background-color: #c8c8c8;
+  border: 1px solid black;
   line-height: 140%;
   text-decoration: none;
   cursor: pointer;
@@ -448,25 +495,41 @@ button {
 button:hover {
   color: #c42c25; }
 
-#search button {
+#search_input button {
   display: block;
   float: left;
   padding: 0 7px;
-  background-color: #bcbcbc;
+  background-color: black;
   border: 0px solid black;
   line-height: 140%;
   text-decoration: none;
   cursor: pointer;
-  height: 32px; }
+  height: 24px; }
 
 #search_input {
-  display: inline-block; }
+  margin: 0px 0px 10px 10px; }
+
+input[type="text"]#name {
+  border: 2px solid black;
+  padding: 5px; }
+
+input[type="text"]#username, input[type="password"]#password {
+  float: left;
+  clear: both;
+  margin: 0px 0px 10px 0px;
+  height: 40px;
+  font-size: 30px;
+  text-transform: uppercase; }
+
+.search_icon {
+  color: white; }
 
 input[type="text"] {
-  border: 2px solid #bcbcbc;
+  border: 2px solid #c8c8c8;
   padding: 5px;
   float: left;
-  height: 18px; }
+  height: 10px;
+  width: 120px; }
 
 input[type="submit"] {
   border: 0px solid none;
@@ -474,7 +537,7 @@ input[type="submit"] {
   padding: 5px; }
 
 textarea {
-  border: 2px solid #bcbcbc;
+  border: 2px solid #c8c8c8;
   background-color: white;
   padding: 5px; }
 
@@ -649,7 +712,7 @@ h3 {
     font-size: 1.125em;
     max-width: 160 em; } }
 hr {
-  border: 1px solid #bcbcbc; }
+  border: 1px solid #c8c8c8; }
 
 /*
  * Structure
@@ -659,7 +722,6 @@ article {
   margin-top: 50px; }
 
 section {
-  border-top: 1px solid black;
   margin: 25px 0px 0px 0px; }
 
 #colors {
